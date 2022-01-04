@@ -15,6 +15,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../CatLikeCoding/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -64,6 +68,15 @@
       <option name="presentableId" value="Default" />
       <updated>1640116138965</updated>
       <workItem from="1640116145052" duration="453000" />
+      <workItem from="1640241089733" duration="747000" />
+      <workItem from="1640541143377" duration="700000" />
+      <workItem from="1640601778301" duration="948000" />
+      <workItem from="1641029017304" duration="7427000" />
+      <workItem from="1641141582850" duration="3536000" />
+      <workItem from="1641151941340" duration="797000" />
+      <workItem from="1641195001334" duration="1764000" />
+      <workItem from="1641239157296" duration="489000" />
+      <workItem from="1641315696813" duration="3462000" />
     </task>
     <servers />
   </component>
@@ -75,5 +88,9 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
