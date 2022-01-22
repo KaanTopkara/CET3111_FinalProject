@@ -6,28 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5a0800525201515e5c585b7249775a464e4e1c297c7b736274281c6ab0e6646f
-      flags: 0
-    RecentlyUsedSceneGuid-1:
       value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
       flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 05570d0201515e0f0f5b097213775e49101541287a7972327a2d1f65e6e3613a
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 060106560701580f5d0a5f2341770844174f1d2c2f2a7568792d456bb7b96d3d
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 5105525552500803090d092315770642414e4f2e7a2c7e62297e4466b4e6663d
-      flags: 0
-    RecentlyUsedSceneGuid-5:
+    RecentlyUsedSceneGuid-1:
       value: 0653075755045e0c0c5f547740760e44104f1b787b787e647a7c4c66bab7316d
       flags: 0
-    RecentlyUsedSceneGuid-6:
+    RecentlyUsedSceneGuid-2:
+      value: 050701000151500e5b0f557a44775a15131649282e2d7336297b1b67e0e5646b
+      flags: 0
+    RecentlyUsedSceneGuid-3:
       value: 0103060255510d0b590d5c2012775c4415154c2b7a797f352e7e1b66b5b56068
       flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 060106560701580f5d0a5f2341770844174f1d2c2f2a7568792d456bb7b96d3d
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 05570d0201515e0f0f5b097213775e49101541287a7972327a2d1f65e6e3613a
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5105525552500803090d092315770642414e4f2e7a2c7e62297e4466b4e6663d
+      flags: 0
     RecentlyUsedSceneGuid-7:
-      value: 050701000151500e5b0f557a44775a15131649282e2d7336297b1b67e0e5646b
+      value: 5601000450050a585e585d7514720d444f161b727d2922367f791f60b5e3616d
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 05070d545c050b02085e092415775c4414164f2b78702065792d4936b4e26460
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 0553075352545f085e0f0e7740710c4413164d727c2a7267752c4965e3b36c60
       flags: 0
     RecentlyUsedScenePath-0:
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
