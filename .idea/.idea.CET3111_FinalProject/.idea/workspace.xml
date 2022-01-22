@@ -3,27 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="09d9f917-8c7d-4577-b438-92fb117ce4e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CET3111_FinalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CET3111_FinalProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Objects/3542096.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Objects/3542096.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Objects/Untitled design (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Objects/Untitled design (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game6.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game6.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game8.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +92,7 @@
       <workItem from="1641667990025" duration="17420000" />
       <workItem from="1642105953922" duration="635000" />
       <workItem from="1642270767305" duration="1800000" />
-      <workItem from="1642796160629" duration="8720000" />
+      <workItem from="1642796160629" duration="11130000" />
     </task>
     <servers />
   </component>

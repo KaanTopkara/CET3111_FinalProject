@@ -32,6 +32,16 @@ public class GameManager : MonoBehaviour
             movementActive = false;
             StartCoroutine(scene6Start());
         }
+        else if (SceneManager.GetActiveScene().name == "Game7")
+        {
+            movementActive = false;
+            StartCoroutine(scene7Start());
+        }
+        else if (SceneManager.GetActiveScene().name == "Game8")
+        {
+            movementActive = false;
+            StartCoroutine(scene8Start());
+        }
     }
 
     private void Update()
@@ -86,6 +96,18 @@ public class GameManager : MonoBehaviour
         DialogueWindow.SetActive(true);
         Talk.GetComponent<TextMeshPro>().text = "Evet, yine ışık yok. Burada bir anahtar var gibi. Sorun ne olabilir ki?";
         yield return new WaitForSeconds(dialogueTime);
+        Talk.GetComponent<TextMeshPro>().text = "Bence bunu çözebilirim.";
+        yield return new WaitForSeconds(dialogueTime);
+        Talk.GetComponent<TextMeshPro>().text = "İlerlemeye devam etmeliyim.";
+        yield return new WaitForSeconds(dialogueTime);
+        DialogueWindow.SetActive(false);
+        movementActive = true;
+    }
+    IEnumerator scene7Start()
+    {
+        DialogueWindow.SetActive(true);
+        Talk.GetComponent<TextMeshPro>().text = "Evet, yine ışık yok. Burada bir anahtar var gibi. Sorun ne olabilir ki?";
+        yield return new WaitForSeconds(dialogueTime);
         Talk.GetComponent<TextMeshPro>().text = "Farklı bir yol denemeliyim.";
         yield return new WaitForSeconds(dialogueTime);
         Talk.GetComponent<TextMeshPro>().text = "Acaba daha neler göreceğim.";
@@ -93,5 +115,14 @@ public class GameManager : MonoBehaviour
         DialogueWindow.SetActive(false);
         movementActive = true;
     }
-    
+    IEnumerator scene8Start()
+    {
+        DialogueWindow.SetActive(true);
+        Talk.GetComponent<TextMeshPro>().text = "Çözülecek başka bir problem daha mı?";
+        yield return new WaitForSeconds(dialogueTime);
+        Talk.GetComponent<TextMeshPro>().text = "Bunu da çözmek imkansız olamaz.";
+        yield return new WaitForSeconds(dialogueTime);
+        DialogueWindow.SetActive(false);
+        movementActive = true;
+    }
 }

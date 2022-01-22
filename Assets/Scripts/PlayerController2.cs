@@ -23,6 +23,7 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private GameObject switchOpen, switchClosed;
     [SerializeField] private GameObject switchOpen2, switchClosed2;
     private bool lightIsOn = false;
+    [SerializeField] private GameObject Doc;
     void Start()
     {
         
