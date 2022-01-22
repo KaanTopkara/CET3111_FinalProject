@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject infoDocPanel;
     private GameManager managerGame;
     private int levelCondition = 0;
-    public GameObject interactiobObjectHolder;
+    public GameObject interactionObjectHolder;
     void Start()
     {
         animatorPlayer = GetComponent<Animator>();
@@ -127,19 +127,20 @@ public class PlayerController : MonoBehaviour
         Debug.Log("staying");
         if (trig.gameObject.name == "Cable")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(0).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
                 TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Faydali bir seye benziyor. Bunu saklamaliyim.";
                 trig.gameObject.SetActive(false);
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
             }
         }
         if (trig.gameObject.name == "Battery")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(1).gameObject.SetActive(true);
@@ -147,24 +148,26 @@ public class PlayerController : MonoBehaviour
                 TextBubble.gameObject.SetActive(true);
                 TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
                 trig.gameObject.SetActive(false);
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
             }
         }
         if (trig.gameObject.name == "Lamp")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(2).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
                 TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Faydali bir seye benziyor. Bunu saklamaliyim.";
                 trig.gameObject.SetActive(false);
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
             }
         }
         if (trig.gameObject.name == "Switch")
         {
-            if (Input.GetKeyDown(KeyCode.E)) 
+            if (Input.GetKey(KeyCode.E)) 
             {
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(3).gameObject.SetActive(true);
@@ -172,13 +175,14 @@ public class PlayerController : MonoBehaviour
                 TextBubble.gameObject.SetActive(true);
                 TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
                 trig.gameObject.SetActive(false);
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
             }
         }
 
         if (trig.gameObject.name == "Doc")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(3).gameObject.SetActive(true);
@@ -186,6 +190,7 @@ public class PlayerController : MonoBehaviour
                 TextBubble.gameObject.SetActive(true);
                 TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
                 trig.gameObject.SetActive(false);
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition = 2;
             }
         }

@@ -47,6 +47,9 @@ public class PlayerController2 : MonoBehaviour
         }else if (SceneManager.GetActiveScene().name == "Game8")
         {
             levelCondition = 0;
+        }else if (SceneManager.GetActiveScene().name == "Game9")
+        {
+            levelCondition = 1;
         }
         
         
@@ -103,9 +106,15 @@ public class PlayerController2 : MonoBehaviour
             GameManager.movementActive = true;
 
         }
-        if (levelCondition >= 2)
+        if (levelCondition >= 2 && SceneManager.GetActiveScene().name != "Game8")
         {
             GameManager.levelPassed = true;
+            lightIsOn = true;
+        }else if (levelCondition >=3)
+        {
+            GameManager.levelPassed = true;
+        }else if (levelCondition >= 2)
+        {
             lightIsOn = true;
         }
         if (lightIsOn)
@@ -113,6 +122,11 @@ public class PlayerController2 : MonoBehaviour
             lamp.SetActive(false);
             lamp2.SetActive(true);
             DarkPanel.SetActive(false);
+        }
+        
+        if (levelCondition >= 2 && SceneManager.GetActiveScene().name != "Game9")
+        {
+            GameManager.levelPassed = true;
         }
     }
     private void OnCollisionEnter2D(Collision2D col)
@@ -143,6 +157,16 @@ public class PlayerController2 : MonoBehaviour
         if (other.gameObject.name == "Switch2")
         {
             interActionGuide.SetActive(true);
+        }
+
+        if (other.gameObject.name == "Doc")
+        {
+            interActionGuide.SetActive(true);
+        }
+
+        if (other.gameObject.name == "Arduino")
+        {
+            GameManager.arduinoInteract = true;
         }
     }
 
@@ -185,10 +209,38 @@ public class PlayerController2 : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
+                Doc.gameObject.SetActive(true);
                 switchOpen2.SetActive(true);
                 switchClosed2.SetActive(false);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition +=1;
+            }
+        }
+
+        if (trig.gameObject.name == "Doc")
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                GameManager.movementActive = false;
+                infoDocPanel.transform.GetChild(5).gameObject.SetActive(true);
+                infoDocPanel.SetActive(true);
+                TextBubble.gameObject.SetActive(true);
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                trig.gameObject.SetActive(false);
+                levelCondition +=1;
+            }
+        }
+
+        if (trig.gameObject.name == "Arduino")
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                TextBubble.gameObject.SetActive(true);
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "";
+                trig.gameObject.SetActive(false);
+                trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                levelCondition++;
             }
         }
     }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static bool movementActive = true;
     public static bool levelPass = false;
     public static bool levelPassed = false;
+    public static bool arduinoInteract = false;
     [SerializeField] GameObject DialogueWindow;
     private GameObject Talk;
     [SerializeField] private float dialogueTime = 1f;
@@ -41,6 +42,10 @@ public class GameManager : MonoBehaviour
         {
             movementActive = false;
             StartCoroutine(scene8Start());
+        }else if (SceneManager.GetActiveScene().name == "Game9")
+        {
+            movementActive = false;
+            StartCoroutine(scene9Start());
         }
     }
 
@@ -49,6 +54,13 @@ public class GameManager : MonoBehaviour
         if (levelPass)
         {
             nextLevel();
+        }
+
+        if (arduinoInteract)
+        {
+            arduinoInteract = false;
+
+            StartCoroutine(ArduinoInteraction());
         }
     }
 
@@ -61,7 +73,7 @@ public class GameManager : MonoBehaviour
             levelPass = false;
         }
     }
-
+    
   
 
     IEnumerator startDialogue()
@@ -121,6 +133,28 @@ public class GameManager : MonoBehaviour
         Talk.GetComponent<TextMeshPro>().text = "Çözülecek başka bir problem daha mı?";
         yield return new WaitForSeconds(dialogueTime);
         Talk.GetComponent<TextMeshPro>().text = "Bunu da çözmek imkansız olamaz.";
+        yield return new WaitForSeconds(dialogueTime);
+        DialogueWindow.SetActive(false);
+        movementActive = true;
+    }
+    IEnumerator scene9Start()
+    {
+        DialogueWindow.SetActive(true);
+        Talk.GetComponent<TextMeshPro>().text = "Sonunda! Işıkla ilgili bir problem yok.";
+        yield return new WaitForSeconds(dialogueTime);
+        Talk.GetComponent<TextMeshPro>().text = "Yerdeki şey de ne öyle?";
+        yield return new WaitForSeconds(dialogueTime);
+        DialogueWindow.SetActive(false);
+        movementActive = true;
+    }
+
+    public IEnumerator ArduinoInteraction()
+    {
+        movementActive = false;
+        DialogueWindow.SetActive(true);
+        Talk.GetComponent<TextMeshPro>().text = "Üzerinde Arduino yazıyor. Bu onun adı olmalı...";
+        yield return new WaitForSeconds(dialogueTime);
+        Talk.GetComponent<TextMeshPro>().text = "Evet, yanında bilgi alabileceğim bir kaç kağıt var.";
         yield return new WaitForSeconds(dialogueTime);
         DialogueWindow.SetActive(false);
         movementActive = true;

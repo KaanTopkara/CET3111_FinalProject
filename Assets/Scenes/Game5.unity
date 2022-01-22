@@ -2525,7 +2525,7 @@ MonoBehaviour:
   movementSpeed: 300
   interActionGuide: {fileID: 1547952178}
   infoDocPanel: {fileID: 1014267099}
-  interactiobObjectHolder: {fileID: 0}
+  interactionObjectHolder: {fileID: 1799482693}
 --- !u!61 &4842322650810350349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2574,3 +2574,6 @@ MonoBehaviour:
   lamp2: {fileID: 316437162}
   switchOpen: {fileID: 0}
   switchClosed: {fileID: 0}
+  switchOpen2: {fileID: 0}
+  switchClosed2: {fileID: 0}
+  Doc: {fileID: 0}
