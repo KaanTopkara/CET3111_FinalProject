@@ -633,10 +633,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2000, y: 800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -841,7 +841,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1841141377
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f872f58f5106f4f2d871ecbab30bd768, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -925,7 +925,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1841141377
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 99e35db9097274edda5724e40e4529a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1009,7 +1009,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1841141377
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 961cb0b154cb14efa8156e5f5b6b1c21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2136,6 +2136,7 @@ MonoBehaviour:
   movementSpeed: 300
   interActionGuide: {fileID: 1547952178}
   infoDocPanel: {fileID: 472598919}
+  interactionObjectHolder: {fileID: 0}
 --- !u!61 &4842322650810350349
 BoxCollider2D:
   m_ObjectHideFlags: 0

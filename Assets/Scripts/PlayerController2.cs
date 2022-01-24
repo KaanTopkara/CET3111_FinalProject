@@ -24,6 +24,7 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private GameObject switchOpen2, switchClosed2;
     private bool lightIsOn = false;
     [SerializeField] private GameObject Doc;
+    [SerializeField] GameObject ArduinoExplanationSheet;
     void Start()
     {
         
@@ -104,7 +105,10 @@ public class PlayerController2 : MonoBehaviour
             }
             infoDocPanel.SetActive(false);
             GameManager.movementActive = true;
-
+            if (SceneManager.GetActiveScene().name == "Game9")
+            {
+                ArduinoExplanationSheet.SetActive(false);
+            }
         }
         if (levelCondition >= 2 && SceneManager.GetActiveScene().name != "Game8")
         {
@@ -113,11 +117,11 @@ public class PlayerController2 : MonoBehaviour
         }else if (levelCondition >=3)
         {
             GameManager.levelPassed = true;
-        }else if (levelCondition >= 2)
+        }else if (levelCondition >= 2 && SceneManager.GetActiveScene().name != "Game9")
         {
             lightIsOn = true;
         }
-        if (lightIsOn)
+        if (lightIsOn && SceneManager.GetActiveScene().name != "Game9")
         {
             lamp.SetActive(false);
             lamp2.SetActive(true);
@@ -129,11 +133,19 @@ public class PlayerController2 : MonoBehaviour
             GameManager.levelPassed = true;
         }
     }
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionStay2D(Collision2D col)
     {
         if (col.gameObject.name == "RightSide")
         {
             GameManager.levelPass = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.name == "RightSide")
+        {
+            GameManager.levelPass = false;
         }
     }
 
@@ -236,9 +248,7 @@ public class PlayerController2 : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                TextBubble.gameObject.SetActive(true);
-                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "";
-                trig.gameObject.SetActive(false);
+                ArduinoExplanationSheet.SetActive(true);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
             }
