@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public static bool arduinoInteract = false;
     [SerializeField] GameObject DialogueWindow;
     private GameObject Talk;
-    [SerializeField] private float dialogueTime = 1f;
+    private float dialogueTime = 3f;
     void Start()
     {
         DialogueWindow.SetActive(false);

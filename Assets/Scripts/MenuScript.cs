@@ -8,15 +8,26 @@ public class MenuScript : MonoBehaviour
 {
     [SerializeField] private GameObject StartMenu;
     [SerializeField] private GameObject OptionsMenu;
+    [SerializeField] private GameObject infoPanel,panel;
     public void startButton()
     {
         SceneManager.LoadScene("Game1");
     }
 
-    public void optionsButton()
+    public void tryAgainButton()
     {
-        StartMenu.SetActive(false);
-        OptionsMenu.SetActive(true);
+        SceneManager.LoadScene("Start");
+    }
+
+    public void infoButton()
+    {
+        panel.SetActive(false);
+        infoPanel.SetActive(true);
+    }
+    public void closeInfoButton()
+    {
+        panel.SetActive(true);
+        infoPanel.SetActive(false);
     }
 
     public void quitButton()

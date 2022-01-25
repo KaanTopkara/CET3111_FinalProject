@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController2 : MonoBehaviour
 {
     private Animator animatorPlayer;
-    [SerializeField] private float movementSpeed = 1f;
+    [SerializeField] private float movementSpeed = 300f;
     private Rigidbody2D playerRB;
     private float lastPosition = 0;
     [SerializeField] private GameObject interActionGuide;
@@ -248,6 +248,8 @@ public class PlayerController2 : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
+                Debug.Log("infodoc");
+                infoDocPanel.SetActive(true);
                 ArduinoExplanationSheet.SetActive(true);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;

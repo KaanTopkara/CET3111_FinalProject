@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Animator animatorPlayer;
-    [SerializeField] private float movementSpeed = 1f;
+    [SerializeField] private float movementSpeed = 300f;
     private Rigidbody2D playerRB;
     private float lastPosition = 0;
     [SerializeField] private GameObject interActionGuide;
@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         {
             interActionGuide.SetActive(true);
             TextBubble.gameObject.SetActive(true);
-            TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu sey de nedir boyle?";
+            TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu şey de nedir böyle?";
         }
         if (other.gameObject.name == "Battery")
         {
@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
         {
             interActionGuide.SetActive(true);
             TextBubble.gameObject.SetActive(true);
-            TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu sey de nedir boyle?";
+            TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu şey de nedir böyle?";
         }
 
         if (other.gameObject.name == "Switch")
@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(0).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
-                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Faydali bir seye benziyor. Bunu saklamaliyim.";
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Faydalı bir şeye benziyor. Bunu saklamalıyım.";
                 trig.gameObject.SetActive(false);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
                 infoDocPanel.transform.GetChild(1).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
                 TextBubble.gameObject.SetActive(true);
-                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da işe yarar gibi gözüküyor.";
                 trig.gameObject.SetActive(false);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
@@ -159,7 +159,7 @@ public class PlayerController : MonoBehaviour
                 GameManager.movementActive = false;
                 infoDocPanel.transform.GetChild(2).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
-                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Faydali bir seye benziyor. Bunu saklamaliyim.";
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Faydalı bir şeye benziyor. Bunu saklamalıyım.";
                 trig.gameObject.SetActive(false);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
                 infoDocPanel.transform.GetChild(3).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
                 TextBubble.gameObject.SetActive(true);
-                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da işe yarar gibi gözüküyor.";
                 trig.gameObject.SetActive(false);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition++;
@@ -185,10 +185,10 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 GameManager.movementActive = false;
-                infoDocPanel.transform.GetChild(3).gameObject.SetActive(true);
+                infoDocPanel.transform.GetChild(4).gameObject.SetActive(true);
                 infoDocPanel.SetActive(true);
                 TextBubble.gameObject.SetActive(true);
-                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu da ise yarar gibi gozukuyor";
+                TextBubble.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Bu önemli bir bilgi gibi gözüküyor.";
                 trig.gameObject.SetActive(false);
                 trig.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 levelCondition = 2;
